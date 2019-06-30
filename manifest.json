@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Twidetch",
+  "version": "1.0",
+
+  "description": "Extend the chat column on Twitch to match ultrawide monitors.",
+
+  "icons": {
+    "48": "icons/Twidetch.svg",
+	"96": "icons/Twidetch.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["twidetch.js"]
+    }
+  ]
+
+}
